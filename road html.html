@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Road Safety Awareness</title>
+  <link rel="stylesheet" href="road css.css">
+  <script>
+    // JavaScript to change the background image periodically
+    let images = [
+      'file:///C:/Users/PIYUSH%20RAJ/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/TempState/EC151B6ECBB40275F4AC68BC99635554/imresizer-1735993368512.jpg', // Replace with actual image paths
+      'file:///C:/Users/PIYUSH%20RAJ/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/TempState/206B469D9EF37B260A78CA51F4675D09/imresizer-1735995024609.jpg',
+      'file:///C:/Users/PIYUSH%20RAJ/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/TempState/06BD2DF0534A430A7EE6A006A5DFD218/imresizer-1735993482697.jpg',
+      'file:///C:/Users/PIYUSH%20RAJ/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/TempState/BBD2F7AC63DCD6415A821F8B0168B88E/imresizer-1735994636060.jpg',
+      'file:///C:/Users/PIYUSH%20RAJ/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/TempState/834806A11A5B9335F5947A842A4A00DF/imresizer-1735993904130.jpg'
+    ];
+    let currentIndex = 0;
+
+    function changeBackgroundImage() {
+      document.querySelector('header').style.backgroundImage = `url('${images[currentIndex]}')`;
+      currentIndex = (currentIndex + 1) % images.length; // Loop through the images
+    }
+
+    // Change image every 5 seconds
+    setInterval(changeBackgroundImage, 3500);
+    
+    // Change the background once when the page loads
+    window.onload = changeBackgroundImage;
+  </script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>ROAD SENSE</h1>
+      <p>Your Sense, Your Safety</p>
+      <!-- <a href="#features" class="cta-button">Learn More</a> -->
+      <a href="secondpage.html" class="cta-button">Learn More</a>
+    </div>
+  </header>
+
+  <section id="features" class="features">
+    <div class="container">
+      <h2>What We Offer</h2>
+      <div class="feature-cards">
+        <div class="card">
+          <h3>Safety Tips</h3>
+          <p>Learn essential tips to stay safe on the roads.</p>
+        </div>
+        <div class="card">
+          <h3>Accident Stats</h3>
+          <p>Understand the data to drive change.</p>
+        </div>
+        <div class="card">
+          <h3>Interactive Tools</h3>
+          <p>Access maps and resources for safer routes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Road Safety Initiative. All rights reserved.</p>
+  </footer>
+</body>
+</html>

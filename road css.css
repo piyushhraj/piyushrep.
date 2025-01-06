@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #F9F9F9; /* Soft White */
+    color: #333333; /* Dark Gray for text */
+  }
+  
+  h1 {
+    color: #fffdfd; /* Consistent heading color */
+    font-family: 'Playfair Display', serif; /* For headings */
+  }
+  h2{
+    color: #090909; /* Consistent heading color */
+    font-family: 'Playfair Display', serif; /* For headings */
+  }
+  a {
+    text-decoration: none;
+    color: #5B84B1; /* Soft Blue for links */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px; /* More space around content */
+  }
+  
+  /* Header Section */
+  header {
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: background-image 1s ease-in-out; /* Smooth transition for background change */
+  }
+  
+  .header-content {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark transparent background for text readability */
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  header p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    font-family: 'Lobster', cursive; /* For slogans */
+  }
+  
+  .cta-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #FFA500; /* Warm Orange for CTA */
+    color: #FFF;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #FFB347; /* Slightly lighter orange */
+  }
+  
+  /* Initially hide the content */
+#features {
+    display: none;
+    overflow: hidden;
+    max-height: 0;  /* Hidden by default */
+    transition: max-height 0.5s ease-in-out; /* Slide effect */
+}
+
+/* Add the class when you want to show the content */
+#features.show {
+    display: block;
+    max-height: 1000px; /* Set a max-height that fits your content */
+}
+
+  
+  .feature-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #F5F5F5;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 30px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .card h3 {
+    color: #6BBF59;
+    margin-bottom: 15px;
+  }
+  
+  .card p {
+    font-size: 1em;
+    color: #555555;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333333;
+    color: #FFF;
+    text-align: center;
+    padding: 30px;
+  }
+  /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #6b8e23; /* Olive Green */
+    color: white;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .header-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styles */
+  .cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  
+  .cta-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Safety Measures Section */
+  #safety-measures {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  #safety-measures h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Safety Cards */
+  .safety-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .safety-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  .safety-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .safety-card h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  
+  .safety-card p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
